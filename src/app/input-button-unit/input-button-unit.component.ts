@@ -10,7 +10,11 @@ export class InputButtonUnitComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
+ ngOnInit() {}
+  
+  changeTitle(title: string) {
+  this.title = title;
   }
 
-}
+
+  }

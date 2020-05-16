@@ -1,3 +1,7 @@
 <p>
-{{ title }}
-</p>
+    input-button-unit works!
+    The title is: {{ title }}
+  </p>
+
+<input id = "input" [value] ="title" (keyup.enter)="changeTitle($event.target.value)">
+<button (click)="changeTitle('another title')">Save</button>
