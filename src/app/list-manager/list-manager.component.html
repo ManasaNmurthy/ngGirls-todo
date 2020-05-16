@@ -2,7 +2,7 @@
 <app-input-button-unit (submit)="addItem($event)"></app-input-button-unit>
 <ul>
   <li *ngFor="let todo of todoList">
-   <app-todo-item [item] = "todo"> </app-todo-item>
+   <app-todo-item [item] = "todo" (remove)="removeItem($event)"> </app-todo-item>
   </li>
 </ul>
 </div>
